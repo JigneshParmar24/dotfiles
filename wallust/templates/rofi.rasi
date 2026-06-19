@@ -1,0 +1,13 @@
+/* wallust colors */
+* {
+    bg: {{background}};
+    hv: {{color4}};
+    primary: {{foreground}};
+    ug: {{color0}};
+    font: "FiraCode Nerd Font Mono 13";
+    background-color: @bg;
+    border: 0px;
+    kl: {{color6}};
+    black: {{color0}};
+    transparent: rgba(0,0,0,0);
+}
