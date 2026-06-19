@@ -1,0 +1,41 @@
+format = """
+[jpp](bold yellow)[@](bold yellow)$username $directory $git_branch$git_status $fill $time
+$character"""
+
+[username]
+style_user = "bold yellow"
+format = "[$user]($style)"
+show_always = true
+
+[hostname]
+style = "bold green"
+format = "[@$hostname]($style) "
+ssh_only = false
+
+[directory]
+style = "bold blue"
+format = "[$path]($style)[$read_only]($read_only_style)"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bold cyan"
+symbol = " "
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+style = "bold red"
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = "[$time]($style)"
+style = "bold purple"
+time_format = "%H:%M"
+
+[character]
+success_symbol = "[->](bold green)"
+error_symbol = "[->](bold red)"
