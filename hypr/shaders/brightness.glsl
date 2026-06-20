@@ -6,5 +6,5 @@ out vec4 fragColor;
 
 void main() {
     vec4 color = texture(tex, v_texcoord);
-    fragColor = vec4(color.rgb * .60, color.a);
+    fragColor = vec4(color.rgb * .50, color.a);
 }

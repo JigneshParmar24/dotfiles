@@ -4,7 +4,7 @@ SHADER_FILE="$HOME/.config/hypr/shaders/brightness.glsl"
 STATE_FILE="/tmp/brightness_value"
 
 if [ ! -f "$STATE_FILE" ]; then
-    echo "0.60" > "$STATE_FILE"
+    echo "0.40" > "$STATE_FILE"
 fi
 
 CURRENT=$(cat "$STATE_FILE")

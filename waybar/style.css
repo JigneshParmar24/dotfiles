@@ -1,0 +1,30 @@
+@import url("/home/onizuka/.cache/wallust/waybar.css");
+
+* {
+    font-family: "FiraCode Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+}
+
+#clock,
+#battery,
+#pulseaudio {
+    padding: 0 10px;
+}
+
+#workspaces {
+    margin-right: 10px;
+}
+
+#workspaces button {
+    color: @foreground;
+}
+
+#workspaces button.active {
+    color: @color4;
+}

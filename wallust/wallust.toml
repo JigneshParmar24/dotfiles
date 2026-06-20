@@ -75,8 +75,12 @@ cava = {
     target = '~/.config/cava/config'
 }
 
-[hooks]
-# Run commands when wallust is invoked. Useful to avoid scripting.
-#wallpaper = """swww img "$(find ~/Media/Pictures/Wallpapers -iregex '.*.\\(jpg\\|jpeg\\|png\\|gif\\)' -type f | shuf -n 1)" """
+waybar = {
+    template = 'waybar.css',
+    target = '~/.cache/wallust/waybar.css'
+}
 
+[hooks]
+
+waybar = "pkill waybar; setsid waybar &disown"
 

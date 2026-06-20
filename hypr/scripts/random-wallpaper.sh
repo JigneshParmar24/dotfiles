@@ -1,5 +1,6 @@
 #!/bin/bash
-DIR="$HOME/Pictures/Wallpapers/Desktop"
+DIR="$HOME/Pictures/Wallpapers/W"
+
 WALL=$(find "$DIR" -type f \
   \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) \
   | shuf -n 1)

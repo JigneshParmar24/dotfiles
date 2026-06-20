@@ -1,0 +1,31 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+
+  "modules-right": [
+    "clock",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "clock": {
+    "format": "{:%a %d %b %H:%M}"
+  },
+
+  "battery": {
+    "format": "  {capacity}%"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}"
+  }
+}
